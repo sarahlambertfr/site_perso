@@ -1,58 +1,70 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Images */
 img {
-border-radius: 50%;
-object-fit: cover;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
+/* Corps du site */
 body {
-text-align: center;
-font-size: 20px;
-font-family: Times New Roman;
-background-color: #fff8ed;
-color: navy;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;
+  background-color: #fff8ed;
+  color: navy;
 }
 
+/* Titres */
 h1 {
-padding: 20px;
-margin: 30 px;
-display: block;
-color: #navy;
-font-size: 20px:
+  padding: 20px;
+  margin: 30px;
+  display: block;
+  color: navy; /* Correct */
+  font-size: 20px;
 }
 
 h3 {
-padding: 20px;
-margin: 30px;
+  padding: 20px;
+  margin: 30px;
 }
 
-p{
-font-family: Times New Roman;
-font-size: 20px;
-color: navy;
+p {
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  color: navy;
 }
 
+/* Ligne horizontale */
 hr {
-border: none;
-height: 2px;
-background-color: black;
-margin: 20px 0;
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
 }
 
+/* En-tête */
 header {
-background-color: #5555;
-color: white;
-padding: 20px;
-text-align: center;
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
+/* Navigation */
 nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-justify-content: center;
-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-
 
 nav ul li a {
   text-decoration: none;
@@ -61,27 +73,29 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #e91e63; /* Une couleur de survol */
+  color: #e91e63;
   text-decoration: underline;
 }
 
+/* Pied de page */
 footer {
-background-color: #5555;
-padding: 20px;
-text-align: center;
+  background-color: #555;
+  padding: 20px;
+  text-align: center;
 }
 
 footer .social-links a {
-margin: 0 10px;
-color: #555;
-font-size: 24px;
-text-decoration: none;
+  margin: 0 10px;
+  color: #555;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 footer .social-links a:hover {
-color: #e91e63:
+  color: #e91e63; /* Correct */
 }
 
+/* Formulaire */
 form {
   max-width: 500px;
   margin: 20px auto;
@@ -113,5 +127,17 @@ button {
 }
 
 button:hover {
-  background-color: #12345a;
+  background-color: #34567a; /* Changement pour un effet plus visible */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  body {
+    font-size: 18px;
+  }
 }
